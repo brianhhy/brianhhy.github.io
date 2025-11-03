@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>블로그 | Brian</title>
+    <meta name="description" content="GitHub Pages로 만든 개인 블로그" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📝</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+    <!-- React 18 UMD + Babel (for JSX in GH Pages without build step) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <span class="title">Brian Blog</span>
+        </div>
+        <nav>
+          <a href="#">홈</a>
+          <a href="#posts">글</a>
+          <a href="https://github.com/brianhhy" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h1>안녕하세요, 브라이언의 기술 블로그입니다.</h1>
+        <p>개발 기록, 문제 해결, 그리고 TIL을 담습니다.</p>
+      </section>
+      <div id="root" aria-live="polite"></div>
+    </main>
+
+    <footer class="footer">
+      © <span id="year"></span> Brian. Built with React on GitHub Pages.
+    </footer>
+    <script type="text/babel" src="script.js"></script>
+  </body>
+  </html>
+
+
